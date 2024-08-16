@@ -44,7 +44,6 @@ class SSIMLoss(nn.Module):
         super(SSIMLoss, self).__init__()
 
     def forward(self, y_true, y_pred):
-        # Simplified SSIM, consider using a dedicated SSIM library for better accuracy
         return 1.0 - torch.mean(F.mse_loss(y_true, y_pred))
 
 class DISLoss(nn.Module):
