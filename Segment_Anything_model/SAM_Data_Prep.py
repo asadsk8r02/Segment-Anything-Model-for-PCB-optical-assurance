@@ -19,7 +19,6 @@ class FileManager:
     def delete_file(file_path):
         if os.path.exists(file_path):
             os.remove(file_path)
-            # Uncomment the next line to see which files are being deleted
             # print(f"Deleted {file_path}")
 
 class MaskManager:
