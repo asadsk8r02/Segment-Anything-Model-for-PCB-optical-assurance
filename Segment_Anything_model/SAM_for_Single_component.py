@@ -230,6 +230,5 @@ def main():
     inference = SAMInference(model, processor, dataset, trainer.device)
     inference.evaluate(random.randint(0, filtered_images.shape[0]-1))
 
-
 if __name__ == "__main__":
     main()
