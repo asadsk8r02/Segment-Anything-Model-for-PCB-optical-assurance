@@ -11,7 +11,7 @@ from torch.utils.data import DataLoader, Dataset
 import shutil
 import math
 
-from unet_model import UNet, DISLoss  # Import the UNet model and loss from the previous file
+from unet_model import UNet, DISLoss 
 
 # Dataset class to handle image and mask loading
 class PCBImageDataset(Dataset):
